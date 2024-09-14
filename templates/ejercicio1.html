@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Ejercicio 1: Cálculo de Promedio</h2>
+<form method="POST">
+    <label for="nota1">Nota 1:</label>
+    <input type="number" name="nota1" min="10" max="70" required><br>
+    
+    <label for="nota2">Nota 2:</label>
+    <input type="number" name="nota2" min="10" max="70" required><br>
+    
+    <label for="nota3">Nota 3:</label>
+    <input type="number" name="nota3" min="10" max="70" required><br>
+    
+    <label for="asistencia">Asistencia:</label>
+    <input type="number" name="asistencia" min="0" max="100" required><br>
+    
+    <button type="submit">Calcular</button>
+</form>
+{% endblock %}
