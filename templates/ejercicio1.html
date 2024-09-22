@@ -1,20 +1,16 @@
-{% extends 'base.html' %}
-
-{% block content %}
-<h2>Ejercicio 1: Cálculo de Promedio</h2>
-<form method="POST">
-    <label for="nota1">Nota 1:</label>
-    <input type="number" name="nota1" min="10" max="70" required><br>
-    
-    <label for="nota2">Nota 2:</label>
-    <input type="number" name="nota2" min="10" max="70" required><br>
-    
-    <label for="nota3">Nota 3:</label>
-    <input type="number" name="nota3" min="10" max="70" required><br>
-    
-    <label for="asistencia">Asistencia:</label>
-    <input type="number" name="asistencia" min="0" max="100" required><br>
-    
-    <button type="submit">Calcular</button>
-</form>
-{% endblock %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <h1>Ejercicio 1 - Compra de Pintura</h1>
+    <form method="POST">
+        Nombre: <input type="text" name="nombre"><br>
+        Edad: <input type="number" name="edad"><br>
+        Cantidad de tarros: <input type="number" name="cantidad_tarros"><br>
+        <input type="submit" value="Calcular">
+    </form>
+</body>
+</html>

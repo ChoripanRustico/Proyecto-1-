@@ -1,17 +1,16 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <h1>Ejercicio 2 - Inicio de sesión</h1>
+    <form method="POST">
+        Usuario: <input type="text" name="username"><br>
+        Contraseña: <input type="password" name="password"><br>
+        <input type="submit" value="Iniciar Sesión">
+    </form>
+</body>
+</html>
 
-{% block content %}
-<h2>Ejercicio 2: Comparación de Nombres</h2>
-<form method="POST">
-    <label for="nombre1">Nombre 1:</label>
-    <input type="text" name="nombre1" required><br>
-    
-    <label for="nombre2">Nombre 2:</label>
-    <input type="text" name="nombre2" required><br>
-    
-    <label for="nombre3">Nombre 3:</label>
-    <input type="text" name="nombre3" required><br>
-    
-    <button type="submit">Comparar</button>
-</form>
-{% endblock %}
